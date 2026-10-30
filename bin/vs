@@ -1,0 +1,4 @@
+#!/bin/sh
+# Video Studio CLI wrapper — works from any location (resolves the repo through the symlink in ~/.local/bin).
+ROOT="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
+cd "$ROOT" && exec "$ROOT/.venv/bin/python" -m studio.cli "$@"

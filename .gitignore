@@ -1,0 +1,15 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+
+# user data — footage metadata, edits, renders, caches, music (private / copyrighted / huge)
+projects/
+music/*
+!music/.gitkeep
+panel.log
+_shot/
+
+# partial files written during renders
+*.part.*
+*.tmp
